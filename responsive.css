@@ -1,0 +1,165 @@
+@media (max-width: 884px) {
+    .h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .h1::before,
+    .h1::after {
+        width: 1.5rem;
+        margin: 0 .2rem;
+        transform: translateY(-.5rem);
+    }
+
+    .slide-content h1 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
+    .imgContainer img {
+        width: 80%;
+    }
+
+    #menuIcon {
+        display: inline;
+        font-size: 1.5rem;
+        width: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menuIcon i {
+        color: var(--1);
+    }
+
+    nav {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        background-color: var(--3);
+        width: 300px;
+        height: calc(100vh - 80px);
+        left: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left .3s ease;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .activeNavList {
+        left: 0;
+    }
+
+    .nav-link {
+        height: 45px;
+        background-color: var(--5);
+        display: flex;
+        width: 250px;
+    }
+}
+
+@media (max-width: 624px) {
+    .footer-section-1 {
+        padding-top: 25px;
+    }
+
+    .footer-section-2 {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    .footer-section-1 a:has(img) {
+        display: none;
+    }
+
+    .footer-section-2 p {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .slide-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .imgContainer img {
+        width: 95%;
+    }
+
+    .slide-content p {
+        font-size: .9rem;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .why-us-inner {
+        min-width: 290px;
+        max-width: 290px;
+    }
+
+    .why-us-inner h2 {
+        font-size: 1rem;
+    }
+
+    .swiper-container {
+        aspect-ratio: 2/1;
+    }
+}
+
+@media (max-width: 535px) {
+    .brand-link {
+        width: 100%;
+        height: 100%;
+    }
+
+    .brand-link img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .swiper-container {
+        aspect-ratio: 2/1.5;
+    }
+}
+
+@media (max-width: 465px) {
+    .swiper-container {
+        aspect-ratio: 2/2.2;
+    }
+}
+
+@media (max-width: 400px) {
+    .what-we-offer-inner {
+        width: 320px;
+        height: 180px;
+    }
+
+    .what-we-offer-inner h2 {
+        font-size: 1.2rem;
+    }
+    .swiper-container {
+        aspect-ratio: 2/2.4;
+    }
+}
+
+@media (max-width: 335px) {
+    .what-we-offer-inner {
+        width: 290px;
+        height: 150px;
+    }
+}
