@@ -1,3 +1,9 @@
+@media (max-width: 1024px) {
+    .swiper-container {
+        aspect-ratio: 4/2.1;
+    }
+}
+
 @media (max-width: 884px) {
     .h1 {
         font-size: 1.7rem;
@@ -27,7 +33,7 @@
     #menuIcon {
         display: inline;
         font-size: 1.5rem;
-        width: 21px;
+        width: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,17 +51,17 @@
     .nav-list {
         flex-direction: column;
         position: fixed;
-        top: 80px;
+        top: 70px;
         background-color: var(--3);
         width: 300px;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 70px);
         left: -100%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: left .3s ease;
         gap: 10px;
-        z-index: 1000;
+        z-index: 999;
     }
 
     .activeNavList {
@@ -67,6 +73,21 @@
         background-color: var(--5);
         display: flex;
         width: 250px;
+    }
+
+    .currentPage {
+        background-color: var(--2);
+    }
+}
+
+@media (max-width: 700px) {
+    .slide-content h1 {
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+
+    .slide-content p {
+        font-size: .9rem;
     }
 }
 
@@ -90,7 +111,7 @@
     }
 
     .slide-content h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-bottom: 5px;
     }
 
@@ -99,7 +120,7 @@
     }
 
     .slide-content p {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .nav-list {
@@ -116,7 +137,7 @@
     }
 
     .swiper-container {
-        aspect-ratio: 2/1;
+        aspect-ratio: 2/1.5;
     }
 }
 
@@ -152,8 +173,17 @@
     .what-we-offer-inner h2 {
         font-size: 1.2rem;
     }
+
     .swiper-container {
         aspect-ratio: 2/2.4;
+    }
+
+    .footer-nav-list {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 }
 
