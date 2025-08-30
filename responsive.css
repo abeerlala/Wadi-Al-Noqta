@@ -46,6 +46,7 @@
     nav {
         justify-content: flex-start;
         gap: 20px;
+        padding: 0 20px;
     }
 
     .nav-list {
@@ -78,6 +79,18 @@
     .currentPage {
         background-color: var(--2);
     }
+}
+
+@media(max-width: 800px) {
+    .contact-container {
+        padding: 2rem 10px;
+        gap: 1rem;
+    }
+
+    .contact-form {
+        padding: 2rem 1rem;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -138,6 +151,10 @@
 
     .swiper-container {
         aspect-ratio: 2/1.5;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
     }
 }
 
